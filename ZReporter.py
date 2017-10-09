@@ -8,7 +8,7 @@ PASSWORD = "password"
 from subprocess import check_output
 import smtplib
 
-output = check_output("ls -la", shell=True)
+output = check_output(COMMAND, shell=True)
  
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
